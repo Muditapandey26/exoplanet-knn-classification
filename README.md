@@ -77,20 +77,20 @@ Section 9 plots training vs validation **error rate (1 − accuracy, the zero-on
 * Large k: both errors rise → **underfitting**.
 * The selected k sits where validation performance is best.
 
-## 8. Results
+##### 8. Results
 
-> Fill this table in after running the notebook (copy the numbers from section 10).
+The following table shows the performance of the models on the held-out test dataset.
 
-| Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
-|---|---|---|---|---|---|
-| Majority class | | | | | |
-| Logistic regression | | | | | |
-| K-NN baseline (k=5) | | | | | |
-| K-NN optimized | | | | | |
+| Model | Accuracy | Precision | Recall | F1-score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Majority Class | 0.6377 | 0.0000 | 0.0000 | 0.0000 | 0.5000 |
+| Logistic Regression | 0.8353 | 0.7206 | 0.8909 | 0.7967 | 0.9169 |
+| Baseline K-NN (k=5) | 0.9137 | 0.8606 | 0.9091 | 0.8842 | 0.9630 |
+| **Optimized K-NN** | **0.9144** | **0.8535** | **0.9218** | **0.8864** | **0.9684** |
 
-Best hyper-parameters: `k = ?`, `metric = ?`, `weights = ?`
+**Best model:** Optimized K-NN (k=11, Manhattan distance, uniform weights).
 
-Key findings: *(write 3–4 sentences: did K-NN beat the baselines, what helped most, where the over/underfitting transition occurs).*
+The optimized K-NN achieved an F1-score of 0.8864 and ROC-AUC of 0.9684. It performed slightly better than baseline K-NN, demonstrating the benefit of hyperparameter tuning.
 
 ## 9. Limitations
 

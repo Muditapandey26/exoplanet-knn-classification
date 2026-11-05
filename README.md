@@ -77,7 +77,7 @@ Section 9 plots training vs validation **error rate (1 − accuracy, the zero-on
 * Large k: both errors rise → **underfitting**.
 * The selected k sits where validation performance is best.
 
-##### 8. Results
+## 8. Results
 
 The following table shows the performance of the models on the held-out test dataset.
 
